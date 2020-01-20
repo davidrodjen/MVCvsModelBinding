@@ -3,7 +3,9 @@
     ViewData["Title"] = "Happy Sunshine People";
 }
 
-<h1>Confirm Your appointment Today!</h1>
+<h1 class="text-center">Confirm Your Appointment Today!</h1>
+
+<br />
 
 
 @if (ViewData["Message"] != null) 
@@ -13,7 +15,7 @@
     </h2>
 }
 
-<form method="post">
+<form method="post" class="text-center">
 
     <label for="full-name">Full Name</label>
     <input type="text" id="full-name" name="full-name" />
@@ -31,7 +33,7 @@
     <br />
 
     <input type="submit" value="Confirm Appointment"
-        class="btn btn=primary" />
+        class="btn btn-secondary" />
 
 
 </form>
