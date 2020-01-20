@@ -1,0 +1,26 @@
+﻿@model MVCvsModelBinding.Models.SunshinePeople
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Confirm Appointment</h1>
+
+<form method="post">
+    <label asp-for="FullName"></label>
+    <input asp-for="FullName" />
+    <span asp-validation-for="FullName"></span>
+	<br />
+
+    <label asp-for="DateOfBirth"></label>
+    <input asp-for="DateOfBirth" />
+    <span asp-validation-for="DateOfBirth"></span>
+	<br />
+
+    <label asp-for="AppointmentDate"></label>
+    <input asp-for="AppointmentDate" />
+    <span asp-validation-for="AppointmentDate"></span>
+	<br />
+
+    <input type="submit" value="Create SunshinePeople" />
+</form>
+
